@@ -14,7 +14,7 @@
         <!--Movie Search-->
         <scene sceneID="Zbq-6b-5q3">
             <objects>
-                <tableViewController id="tuf-5W-ADd" customClass="MovieTableViewController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="tuf-5W-ADd" customClass="MovieListTableViewController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="419" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rgd-EY-2hZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,12 @@
                                         <constraint firstItem="YZj-Q5-lo7" firstAttribute="leading" secondItem="PAm-ai-dg3" secondAttribute="leadingMargin" constant="93" id="uiS-Iz-cLl"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="posterImageView" destination="YZj-Q5-lo7" id="FKp-1V-WZV"/>
+                                    <outlet property="ratingLabel" destination="3yx-zn-mec" id="ftC-f4-uEw"/>
+                                    <outlet property="summaryLabel" destination="sHN-gt-hzZ" id="Xes-G7-k3f"/>
+                                    <outlet property="titleLabel" destination="0NP-sc-7Hf" id="RQs-cT-9y7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
