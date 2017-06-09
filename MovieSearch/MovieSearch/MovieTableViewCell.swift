@@ -16,7 +16,5 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
-
-    //MARK: - Update Function
     
 }

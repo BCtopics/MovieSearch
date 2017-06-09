@@ -16,31 +16,33 @@ class MovieListTableViewController: UITableViewController, UISearchBarDelegate {
             print("Outside dispatch")
             DispatchQueue.main.async {
                 print("inside dispatch")
-                self.movies = movies
+                MovieController.movies = movies
             }
         }
     }
     
-    //MARK: - Internal Properties
-    var movies = [Movie](){
-        didSet{
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
+    //MARK: - NotifcationCenter
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.refresh), name: MovieController.moviesWereUpdatedNotification, object: nil)
+    }
+    
+    func refresh() {
+        self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
+        return MovieController.movies.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as? MovieTableViewCell else { return UITableViewCell() }
         
-        let movie = movies[indexPath.row]
+        let movie = MovieController.movies[indexPath.row]
         cell.titleLabel.text = movie.title
         cell.ratingLabel.text = "Rating: \(movie.rating)"
         cell.summaryLabel.text = movie.summary

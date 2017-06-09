@@ -10,6 +10,18 @@ import Foundation
 
 class MovieController {
     
+    //MARK: - NotificationCenter
+    
+    static let moviesWereUpdatedNotification = Notification.Name("moviesWereUpdated")
+    
+    static var movies = [Movie](){
+        didSet {
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: moviesWereUpdatedNotification, object: self)
+            }
+        }
+    }
+    
     //MARK: - baseURL
     
     static let baseURL = URL(string: "https://api.themoviedb.org/3/search/movie?")
