@@ -51,7 +51,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHN-gt-hzZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHN-gt-hzZ">
                                                     <rect key="frame" x="0.0" y="74.5" width="343" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -70,19 +70,19 @@
                                             </constraints>
                                         </stackView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YZj-Q5-lo7">
-                                            <rect key="frame" x="101" y="131" width="173" height="259.5"/>
+                                            <rect key="frame" x="129" y="121" width="117" height="176"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="YZj-Q5-lo7" secondAttribute="height" multiplier="4:6" id="RO8-oR-qgT"/>
+                                                <constraint firstAttribute="width" secondItem="YZj-Q5-lo7" secondAttribute="height" multiplier="2:3" id="RO8-oR-qgT"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="YZj-Q5-lo7" secondAttribute="trailing" constant="93" id="1nn-er-Joc"/>
                                         <constraint firstItem="Sup-iM-DnE" firstAttribute="leading" secondItem="PAm-ai-dg3" secondAttribute="leadingMargin" constant="8" id="F7P-aT-LKx"/>
+                                        <constraint firstItem="YZj-Q5-lo7" firstAttribute="top" secondItem="Sup-iM-DnE" secondAttribute="bottom" constant="10" id="Kjv-Fi-jqz"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Sup-iM-DnE" secondAttribute="trailing" constant="8" id="Ooh-pB-poy"/>
                                         <constraint firstItem="Sup-iM-DnE" firstAttribute="top" secondItem="PAm-ai-dg3" secondAttribute="topMargin" constant="8" id="Uet-zq-MhC"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="YZj-Q5-lo7" secondAttribute="bottom" constant="20" id="UjT-My-fdw"/>
-                                        <constraint firstItem="YZj-Q5-lo7" firstAttribute="leading" secondItem="PAm-ai-dg3" secondAttribute="leadingMargin" constant="93" id="uiS-Iz-cLl"/>
+                                        <constraint firstItem="YZj-Q5-lo7" firstAttribute="leading" secondItem="PAm-ai-dg3" secondAttribute="leadingMargin" constant="121" id="gXc-ao-jik"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="YZj-Q5-lo7" secondAttribute="trailing" constant="121" id="pmL-Np-oUH"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

@@ -32,13 +32,13 @@ class Movie {
             let summary = dictionary[summaryKey] as? String,
             let image = dictionary[imageKey] as? String else { NSLog("JSON Initializer has failed"); return nil }
         
+        let imageLink = "https://image.tmdb.org/t/p/w500/" + image
+        
         self.title = title
         self.rating = rating
         self.summary = summary
-        self.image = image // FIXME: - This is wrong, Gotta fix with the actual endpoint later.
-        
+        self.image = imageLink
     }
-    
 }
 
 //MARK: - Keys
