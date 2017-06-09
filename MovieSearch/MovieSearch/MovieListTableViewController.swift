@@ -11,6 +11,7 @@ import UIKit
 class MovieListTableViewController: UITableViewController, UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
         guard let searchTerm = searchBar.text else { return }
         MovieController.fetchResponses(searchTerm: searchTerm) { (movies) in
             print("Outside dispatch")
