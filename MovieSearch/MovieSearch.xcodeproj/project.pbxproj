@@ -15,6 +15,7 @@
 		6BE913291EEAF7AA00EEA178 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE913281EEAF7AA00EEA178 /* MovieListTableViewController.swift */; };
 		6BE9132B1EEAF7BC00EEA178 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE9132A1EEAF7BC00EEA178 /* MovieTableViewCell.swift */; };
 		6BE9132E1EEAF80C00EEA178 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE9132D1EEAF80C00EEA178 /* NetworkController.swift */; };
+		6BE913301EEAF96000EEA178 /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE9132F1EEAF96000EEA178 /* MovieController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6BE913281EEAF7AA00EEA178 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
 		6BE9132A1EEAF7BC00EEA178 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		6BE9132D1EEAF80C00EEA178 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		6BE9132F1EEAF96000EEA178 /* MovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		6BE913231EEAF16700EEA178 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6BE9132F1EEAF96000EEA178 /* MovieController.swift */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE913301EEAF96000EEA178 /* MovieController.swift in Sources */,
 				6BE9132E1EEAF80C00EEA178 /* NetworkController.swift in Sources */,
 				6BE913291EEAF7AA00EEA178 /* MovieListTableViewController.swift in Sources */,
 				6BE913251EEAF18300EEA178 /* Movie.swift in Sources */,
